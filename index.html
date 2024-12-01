@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8" >
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+
+  
+
+
+
+    <title>Document</title>
+
+    <!-- <button id="loginButton">Đăng nhập</button> -->
+
+    
+
+<!-- <h2>Đăng Nhập</h2>
+
+<form id="loginForm">
+
+<label for="username">Tài khoản:</label>
+
+<input type="text" id="username" required><br><br>
+
+
+<label for="password">Mật khẩu:</label>
+
+<input type="password" id="password" required><br><br>
+
+
+<label for="email">Email:</label>
+
+<input type="email" id="email" required><br><br>
+
+
+
+</form>
+
+
+
+
+<button id="resetButton">Reset</button> -->
+
+
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+    
+            <div class="indicator"> 
+                <svg width="16px" height="12px">
+                    <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+
+        <img alt="" height="50" src="https://uneti.edu.vn/wp-content/uploads/2020/11/logo-news-2-1-e1606189748292.png" width="50" />
+
+
+        <h1>TRUNG TÂM DỰ BÁO MÔI TRƯỜNG UNETI</h1>
+
+    </div>
+
+    <div class="nav">
+
+        <a href="#"> DỰ BÁO ĐỘ ẨM </a>
+
+        <a href="#"> DỰ BÁO NHIỆT ĐỘ </a>
+
+        <a href="#"> DỰ BÁO LƯỢNG MƯA </a>
+
+        <a href="#"> DỰ BÁO LƯỢNG GIÓ </a>
+
+    </div>
+
+    <div class="breadcrumb">
+
+        <a href="#"> DỰ BÁO </a>
+
+        &gt;
+
+        <a href="#"> MÔI TRƯỜNG UNETI </a>
+
+    </div>
+
+
+    <div class="content">
+
+        <h2>THỜI TIẾT HOÀNG MAI</h2>
+
+        <div class="forecast">
+
+
+            <div class="box">
+
+                <h3>DỰ BÁO ĐỘ ẨM</h3>
+
+                <p>
+
+                    <i class="far fa-clock"> </i>
+
+                    Cập nhật: <button id="Reset">Cập nhật</button>
+
+                </p>
+
+                <p>Nhiệt độ: 24°C</p>
+
+                <p>Thời tiết: Đêm có mây</p>
+
+                <p id="answer_doam">Độ ẩm: </p>
+
+                <p>Hướng gió: Gió đông nam - tốc độ: 2 m/s</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>DỰ BÁO NHIỆT ĐỘ</h3>
+
+                <p>
+
+                    <i class="far fa-clock"> </i>
+
+                    Cập nhật:<button id="ResetNhietdo">Cập nhật</button>
+
+                </p>
+
+                <p id="answer_nhietdo">Nhiệt độ:</p>
+
+                <p>Độ ẩm: 45</p>
+
+                <p>Hướng gió: tốc độ: 2m/s</p>
+
+            </div>
+
+            <div class="box">
+
+                <h3>DỰ BÁO LƯỢNG MƯA</h3>
+
+                <p>
+                 
+                    <i class="far fa-clock"> </i>
+
+                    Cập nhật:   <button id="ResetLuongMua">Cập nhật</button>
+
+                </p>
+
+                <p>Nhiệt độ: 21°C</p>
+
+                <p>Độ ẩm: 90</p>
+
+                <p>Hướng gió: tốc độ: 1m/s</p>
+                <p id="answer_luongmua"></p>
+
+
+            </div>
+
+            <div class="box">
+
+                <h3>DỰ BÁO TỐC ĐỘ GIÓ</h3>
+
+                <p>
+
+                    <i class="far fa-clock"> </i>
+
+                    Cập nhật:<button id="ResetTDGio">Cập nhật</button>
+
+                </p>
+
+                <p>Nhiệt độ: 24°C</p>
+
+                <!-- <p>Thời tiết: Đêm có mây</p> -->
+
+                <p>Độ ẩm: 76</p>
+
+                <p id="answer_tdgio"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+        <div class="column">
+
+            <h4>CƠ SỞ HÀ NỘI</h4>
+
+            <p>Số 456 Minh Khai, P.Vĩnh Tuy, Q.Hai Bà Trưng, TP.Hà Nội</p>
+
+            <p>Số 218 Đường Lĩnh Nam, Q.Hoàng Mai, TP.Hà Nội</p>
+
+            <p>024.38621504 | 024.38623938</p>
+
+            <p>
+
+                <i class="fas fa-envelope"> </i>
+
+                web@uneti.edu.vn
+
+            </p>
+
+        </div>
+
+        <div class="column">
+
+            <h4>CƠ SỞ NAM ĐỊNH</h4>
+
+            <p>Số 353 Trần Hưng Đạo, P.Bà Triệu, TP.Nam Định</p>
+
+            <p>Khu xưởng Thực hành: Phường Mỹ Xá, TP.Nam Định</p>
+
+            <p>0228.3848706 | 0228.3845747</p>
+
+            <p>
+
+                <i class="fas fa-envelope"> </i>
+
+                web@uneti.edu.vn
+
+            </p>
+
+        </div>
+
+        <div class="stats">
+
+            <p>
+
+                <i class="fas fa-users"> </i>
+
+                Online Users: 116,895
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-eye"> </i>
+
+                Today's Views: 4,394
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-eye"> </i>
+
+                Yesterday's Views: 156,528
+
+            </p>
+
+            <p>
+
+                <i class="fas fa-eye"> </i>
+
+                Total Views: 31,512,187
+
+            </p>
+
+        </div>
+        <b style="display: flex !important; align-items: center; justify-content: center;">
+            <p id="hours"></p> 
+            : <p id="minutes"></p> : <p id="seconds"></p>
+        </b>
+        <p>© Copyright Trường Đại học Kinh tế - Kỹ thuật Công nghiệp</p>
+
+    </div>
+
+<script src="./script_doam.js"
+></script>
+
+
+</body>
+</html>
